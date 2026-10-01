@@ -13,7 +13,7 @@ const navLinks = [
     dropdown: ["Finance & Compliance", "Field Operations", "Healthcare", "Education", "Logistics"],
   },
   { label: "Pricing", href: "#pricing" },
-  { label: "Docs", href: "#" },
+  { label: "Docs", href: "/docs" },
   { label: "Enterprise", href: "#" },
 ];
 
@@ -92,18 +92,18 @@ export default function Navbar() {
 
         {/* Right CTAs */}
         <div className="hidden md:flex items-center gap-2">
-          <a
-            href="#"
+          <Link
+            href="/login"
             className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-black rounded-full hover:bg-black/5 transition-all duration-150"
           >
             Sign in
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            href="/register"
             className="px-4 py-2 text-sm font-semibold bg-black text-white rounded-full hover:bg-gray-900 transition-all duration-150 shadow-sm"
           >
             Request demo
-          </a>
+          </Link>
         </div>
 
         {/* Mobile hamburger */}
@@ -136,18 +136,18 @@ export default function Navbar() {
             </div>
           ))}
           <div className="flex flex-col gap-3 mt-4 pt-4 border-t border-gray-100">
-            <a
-              href="#"
+            <Link
+              href="/login"
               className="text-center py-3 text-sm font-medium text-gray-700 hover:text-black rounded-full border border-gray-200 hover:bg-gray-50 transition"
             >
               Sign in
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              href="/register"
               className="text-center py-3 text-sm font-semibold bg-black text-white rounded-full hover:bg-gray-900 transition"
             >
               Request demo
-            </a>
+            </Link>
           </div>
         </div>
       )}

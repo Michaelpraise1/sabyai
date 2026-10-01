@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function CTABanner() {
   return (
     <section className="px-4 pb-0 bg-[#EFEFEF]">
@@ -32,18 +34,18 @@ export default function CTABanner() {
             Join the organizations using Saby AI to run smarter, comply faster, and execute without limits — across every branch, team, and touchpoint.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-            <a
-              href="#"
+            <Link
+              href="/register"
               className="px-7 py-3.5 bg-white text-black text-sm font-semibold rounded-full hover:bg-gray-100 transition-all duration-200 shadow-lg hover:-translate-y-0.5"
             >
               Start for free
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              href="/register"
               className="px-7 py-3.5 border border-white/20 text-white text-sm font-semibold rounded-full hover:bg-white/10 transition-all duration-200"
             >
               Book a demo
-            </a>
+            </Link>
           </div>
           <p className="text-gray-500 text-xs mt-6">
             14-day free trial · No credit card required · Cancel anytime

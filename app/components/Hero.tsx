@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 const promptExamples = [
   "Flag all compliance risks in the Lagos branch this quarter",
@@ -77,12 +78,12 @@ export default function Hero() {
 
         {/* CTA buttons */}
         <div className="flex flex-col sm:flex-row items-center gap-3 mb-14">
-          <a
-            href="#"
+          <Link
+            href="/register"
             className="px-6 py-3.5 bg-black text-white text-sm font-semibold rounded-full hover:bg-gray-900 transition-all duration-200 shadow-md hover:shadow-lg hover:-translate-y-0.5"
           >
             Get started free
-          </a>
+          </Link>
           <a
             href="#"
             className="px-6 py-3.5 bg-white text-black text-sm font-semibold rounded-full border border-black/10 hover:border-black/20 hover:bg-gray-50 transition-all duration-200 shadow-sm flex items-center gap-2"
